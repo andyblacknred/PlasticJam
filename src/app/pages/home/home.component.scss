@@ -1,0 +1,200 @@
+@import "../../../variables";
+
+.mainscrn {
+  background-image: url(/assets/img/mainscrn-bg.png);
+  color: $white;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-color: $white;
+  .mainscrn-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 75px;
+    .mainscrn-left {
+      width: 64%;
+    }
+    .mainscrn-right {
+      width: 22%;
+    }
+    .mainscrn-title {
+      font-size: 48px;
+      font-weight: 400;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      span {
+        font-weight: 700;
+      }
+    }
+    .mainscrn-text {
+      margin-bottom: 30px;
+    }
+    .mainscrn-btn {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .mainscrn-img {
+      width: 100%;
+    }
+  }
+}
+
+.advantages {
+  background-color: $white;
+  padding-top: 15px;
+  padding-bottom: 128px;
+  .advantages-title {
+    font-size: 32px;
+    max-width: 530px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 25px;
+    span {
+      font-weight: 700;
+    }
+  }
+  .advantages-text {
+    color: $grey;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .advantages-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    .advantages-item {
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+      -webkit-border-radius: 32px;
+      -moz-border-radius: 32px;
+      border-radius: 32px;
+      width: 32%;
+      text-align: center;
+      padding: 32px 48px;
+      box-sizing: border-box;
+      .advantages-img {
+        height: 96px;
+      }
+      .advantages-subtitle {
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 16px;
+      }
+      .advantages-subtext {
+        font-size: 16px;
+        color: $grey;
+      }
+    }
+  }
+}
+
+.subscribe {
+  background-color: $white;
+  background-image: url(/assets/img/subscribe-bg.png);
+  background-position: center center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  padding-top: 26px;
+  padding-bottom: 93px;
+  .subscribe-flex {
+    display: flex;
+    background-color: $white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    max-width: 579px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 1px solid #F1F1F1;
+    .subscribe-input {
+      border: none;
+      color: $grey;
+      outline: none;
+      padding: 15px;
+      width: 100%;
+    }
+    .subscribe-btn {
+      border: none;
+      padding-left: 48px;
+      padding-right: 48px;
+      color: $white;
+      background-color: $blue;
+      margin: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .advantages {
+    .advantages-flex {
+      .advantages-item {
+        padding: 15px;
+        .advantages-subtitle {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainscrn {
+    -webkit-background-size: cover;
+    background-size: cover;
+    .mainscrn-flex {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      .mainscrn-left {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .mainscrn-right {
+        width: 100%;
+        max-width: 150px;
+      }
+      .mainscrn-title {
+        font-size: 32px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        span {
+        }
+      }
+      .mainscrn-text {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .advantages {
+    .advantages-flex {
+      flex-wrap: wrap;
+      .advantages-item {
+        padding: 25px;
+        width: 100%;
+        margin-bottom: 25px;
+        .advantages-img {
+        }
+        .advantages-subtitle {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .subscribe {
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-bottom: 200px;
+    .subscribe-flex {
+      .subscribe-btn {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+}
