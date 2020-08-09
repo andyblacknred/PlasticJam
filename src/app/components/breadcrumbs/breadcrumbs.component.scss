@@ -1,0 +1,27 @@
+.breadcrumbs {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  .breadcrumbs-list {
+    display: flex;
+    list-style-type: none;
+    .breadcrumbs-item {
+      .breadcrumbs-link {
+        text-decoration: none;
+        color: #CCCCCC;
+        &::after {
+          content: '>';
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+      &:last-child {
+        .breadcrumbs-link {
+          color: #3A80BA;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
