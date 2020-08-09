@@ -19,9 +19,7 @@ export class StatsComponent implements OnInit {
   public users: any;
 
   ngOnInit(): void {
-    console.log(this.http.get('http://159.65.233.178:8080/task/api/v1/users?page=0&range=10'));
     this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((data)=>{
-      console.log(data);
       this.users = data;
     });
     this.breadcrubsService.setBreadcrumbs();

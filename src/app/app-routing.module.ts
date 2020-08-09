@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from "./pages/home/home.component";
 import { StatsComponent } from "./pages/stats/stats.component";
+import {UserComponent} from "./pages/user/user.component";
 
 
 const routes: Routes = [
@@ -13,10 +14,22 @@ const routes: Routes = [
         children: [
             {
                 path: 'stats',
-                component: StatsComponent,
                 data: {
                     breadcrumb: 'Stats',
                 },
+                children: [
+                    {
+                        path: ':id',
+                        component: UserComponent,
+                        data: {
+                            breadcrumb: 'User',
+                        },
+                    },
+                    {
+                        path: '',
+                        component: StatsComponent
+                    }
+                ]
             },
             {
                 path: '',
