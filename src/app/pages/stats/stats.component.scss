@@ -1,0 +1,41 @@
+.stats {
+  background-color: #fff;
+  min-height: calc(100vh - 216px);
+  .stats-table {
+    width: 100%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    .stats-thead {
+      .stats-tr {
+        .stats-th {
+          background-color: #3A80BA;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 300;
+          padding: 10px 25px;
+          text-align: left;
+        }
+      }
+    }
+    .stats-tbody {
+      .stats-tr {
+        .stats-td {
+          font-size: 16px;
+          text-align: center;
+          background-color: #fbfbfb;
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+        }
+        &:nth-child(even) {
+          .stats-td {
+            background-color: #F1F1F1;
+          }
+        }
+      }
+    }
+  }
+}
