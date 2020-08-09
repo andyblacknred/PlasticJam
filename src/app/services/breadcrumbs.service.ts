@@ -46,8 +46,6 @@ export class BreadcrumbsService {
 
     this.router.config.forEach(item=>{
       this.breadcrumbsName.push();
-      console.log(this.breadcrumbsName);
-      console.log();
       getBreadcrumbs(item);
     });
   }
