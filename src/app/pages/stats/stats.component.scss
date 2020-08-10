@@ -3,39 +3,44 @@
 .stats {
   background-color: $white;
   min-height: calc(100vh - 216px);
-  .stats-table {
+  .stats-table-wrapper {
     width: 100%;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-    .stats-thead {
-      .stats-tr {
-        .stats-th {
-          background-color: $blue;
-          color: $white;
-          font-size: 16px;
-          font-weight: 300;
-          padding: 10px 25px;
-          text-align: left;
-        }
-      }
-    }
-    .stats-tbody {
-      .stats-tr {
-        cursor: pointer;
-        .stats-td {
-          font-size: 16px;
-          text-align: center;
-          background-color: $light-table-row;
-          a {
-            text-decoration: none;
-            color: $black;
+    overflow: auto;
+    .stats-table {
+      width: 100%;
+      min-width: 700px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      overflow: hidden;
+      .stats-thead {
+        .stats-tr {
+          .stats-th {
+            background-color: $blue;
+            color: $white;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 10px 25px;
+            text-align: left;
           }
         }
-        &:nth-child(even) {
+      }
+      .stats-tbody {
+        .stats-tr {
+          cursor: pointer;
           .stats-td {
-            background-color: $dark-table-row;
+            font-size: 16px;
+            text-align: center;
+            background-color: $light-table-row;
+            a {
+              text-decoration: none;
+              color: $black;
+            }
+          }
+          &:nth-child(even) {
+            .stats-td {
+              background-color: $dark-table-row;
+            }
           }
         }
       }

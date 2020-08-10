@@ -12,7 +12,9 @@ export class BreadcrumbsService {
   public breadcrumbsName: string[] = [];
   public isHomepage: boolean = this.currentUrl === '/home';
 
-  constructor( private router: Router ) { }
+  constructor(
+    private router: Router
+  ) { }
 
   setBreadcrumbs() {
     let that = this;
@@ -45,7 +47,6 @@ export class BreadcrumbsService {
     }
 
     this.router.config.forEach(item=>{
-      this.breadcrumbsName.push();
       getBreadcrumbs(item);
     });
   }

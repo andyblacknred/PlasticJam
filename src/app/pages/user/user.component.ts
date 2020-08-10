@@ -25,7 +25,6 @@ export class UserComponent implements OnInit {
     this.id = this.activateRoute.snapshot.params['id'];
     this.http.get(`https://jsonplaceholder.typicode.com/users/${this.id}`).subscribe((data)=>{
       this.data = data;
-      console.log(this.data);
     });
   }
 

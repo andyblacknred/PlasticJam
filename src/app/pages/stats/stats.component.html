@@ -1,8 +1,9 @@
 <div class="stats">
     <div class="container">
         <h1 class="stats-title">Users statistics</h1>
-        <table class="stats-table">
-            <thead class="stats-thead">
+        <div class="stats-table-wrapper">
+            <table class="stats-table">
+                <thead class="stats-thead">
                 <tr class="stats-tr">
                     <th class="stats-th">Id</th>
                     <th class="stats-th">Name</th>
@@ -10,8 +11,8 @@
                     <th class="stats-th">Email</th>
                     <th class="stats-th">Website</th>
                 </tr>
-            </thead>
-            <tbody class="stats-tbody">
+                </thead>
+                <tbody class="stats-tbody">
                 <tr *ngFor="let item of users" [routerLink]="['/home', 'stats', item.id]" class="stats-tr">
                     <td class="stats-td">{{ item.id }}</td>
                     <td class="stats-td">{{ item.name }}</td>
@@ -19,7 +20,8 @@
                     <td class="stats-td">{{ item.email }}</td>
                     <td class="stats-td">{{ item.website }}</td>
                 </tr>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
