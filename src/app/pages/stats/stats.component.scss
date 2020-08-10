@@ -1,5 +1,7 @@
+@import '../../../variables';
+
 .stats {
-  background-color: #fff;
+  background-color: $white;
   min-height: calc(100vh - 216px);
   .stats-table {
     width: 100%;
@@ -10,8 +12,8 @@
     .stats-thead {
       .stats-tr {
         .stats-th {
-          background-color: #3A80BA;
-          color: #fff;
+          background-color: $blue;
+          color: $white;
           font-size: 16px;
           font-weight: 300;
           padding: 10px 25px;
@@ -24,15 +26,15 @@
         .stats-td {
           font-size: 16px;
           text-align: center;
-          background-color: #fbfbfb;
+          background-color: $light-table-row;
           a {
             text-decoration: none;
-            color: #000;
+            color: $black;
           }
         }
         &:nth-child(even) {
           .stats-td {
-            background-color: #F1F1F1;
+            background-color: $dark-table-row;
           }
         }
       }

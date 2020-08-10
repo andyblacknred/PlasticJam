@@ -1,14 +1,16 @@
+@import '../../../variables';
+
 .breadcrumbs {
   padding-top: 15px;
   padding-bottom: 25px;
-  background-color: #fff;
+  background-color: $white;
   .breadcrumbs-list {
     display: flex;
     list-style-type: none;
     .breadcrumbs-item {
       .breadcrumbs-link {
         text-decoration: none;
-        color: #CCCCCC;
+        color: $light-grey;
         &::after {
           content: '>';
           margin-left: 5px;
@@ -17,7 +19,7 @@
       }
       &:last-child {
         .breadcrumbs-link {
-          color: #3A80BA;
+          color: $blue;
           &::after {
             display: none;
           }

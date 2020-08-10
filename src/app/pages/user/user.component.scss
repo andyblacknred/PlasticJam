@@ -1,5 +1,7 @@
+@import '../../../variables';
+
 .user {
-  background-color: #fff;
+  background-color: $white;
   min-height: calc(100vh - 216px);
   span {
     font-weight: 700;
